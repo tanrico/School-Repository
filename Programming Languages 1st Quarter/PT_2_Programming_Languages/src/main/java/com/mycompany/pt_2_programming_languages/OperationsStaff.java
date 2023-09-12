@@ -12,9 +12,9 @@ public class OperationsStaff extends User{
     private String osID;
 
     //constructors, getters, and setters
-    public OperationsStaff(String adminID, String fName, String lName, String username, String password, String userType, String birthdate) {
-        super(fName, lName, username, password, userType, birthdate);
-        this.osID = adminID;
+    public OperationsStaff(String osID, String fName, String lName, String username, String password, String userType, String birthdate, String email) {
+        super(fName, lName, username, password, userType, birthdate, email);
+        this.osID = osID;
     }
 
     public String getAdminID() {

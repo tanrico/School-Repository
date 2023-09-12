@@ -15,15 +15,17 @@ public class User {
     private String password;
     private String userType;
     private String birthdate;
+    private String email;
 
     //constructors, getters, and setters
-    public User(String fName, String lName, String username, String password, String userType, String birthdate) {
+    public User(String fName, String lName, String username, String password, String userType, String birthdate,String email) {
         this.fName = fName;
         this.lName = lName;
         this.username = username;
         this.password = password;
         this.userType = userType;
         this.birthdate = birthdate;
+        this.email = email;
     }
 
     public String getfName() {
@@ -73,5 +75,12 @@ public class User {
     public void setBirthdate(String birthdate) {
         this.birthdate = birthdate;
     }
-     
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }

@@ -12,9 +12,9 @@ public class Supervisor extends User{
     private String supervisorID;
 
     //constructors, getters, and setters
-    public Supervisor(String adminID, String fName, String lName, String username, String password, String userType, String birthdate) {
-        super(fName, lName, username, password, userType, birthdate);
-        this.supervisorID = adminID;
+    public Supervisor(String supervisorID, String fName, String lName, String username, String password, String userType, String birthdate, String email) {
+        super(fName, lName, username, password, userType, birthdate, email);
+        this.supervisorID = supervisorID;
     }
 
     public String getAdminID() {

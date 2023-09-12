@@ -12,9 +12,9 @@ public class Manager extends User{
    private String managerID;
 
     //constructors, getters, and setters
-    public Manager(String adminID, String fName, String lName, String username, String password, String userType, String birthdate) {
-        super(fName, lName, username, password, userType, birthdate);
-        this.managerID = adminID;
+    public Manager(String managerID, String fName, String lName, String username, String password, String userType, String birthdate, String email) {
+        super(fName, lName, username, password, userType, birthdate, email);
+        this.managerID = managerID;
     }
 
     public String getAdminID() {

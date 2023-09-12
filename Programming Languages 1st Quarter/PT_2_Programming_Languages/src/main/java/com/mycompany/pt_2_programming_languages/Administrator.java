@@ -12,10 +12,11 @@ public class Administrator extends User{
     private String adminID;
 
     //constructors, getters, and setters
-    public Administrator(String adminID, String fName, String lName, String username, String password, String userType, String birthdate) {
-        super(fName, lName, username, password, userType, birthdate);
+    public Administrator(String adminID, String fName, String lName, String username, String password, String userType, String birthdate, String email) {
+        super(fName, lName, username, password, userType, birthdate, email);
         this.adminID = adminID;
     }
+    
 
     public String getAdminID() {
         return adminID;
