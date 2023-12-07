@@ -28,6 +28,9 @@ public class User {
         this.email = email;
     }
 
+    User() { //default constructor
+    }
+
     public String getfName() {
         return fName;
     }
