@@ -1,32 +1,32 @@
 
 public class Rectangle {
 	//Declaration of Variables
-	double length, height;
+	double width, height;
 
 	//Functions
-	public double perimeter(double length, double height) {
-		return (length*2) + (height*2);
+	public double perimeter(double width, double height) {
+		return (width*2) + (height*2);
 	}
 	
-	public double area(double length, double height) {
-		return length*height;
+	public double area(double width, double height) {
+		return width*height;
 	}
 	
 	
 	//Constructor
-	public Rectangle(double length, double height) {
+	public Rectangle(double width, double height) {
 		super();
-		this.length = length;
+		this.width = width;
 		this.height = height;
 	}
 
 	//Getters and Setters
-	public double getLength() {
-		return length;
+	public double getWidth() {
+		return width;
 	}
 
-	public void setLength(double length) {
-		this.length = length;
+	public void setWidth(double width) {
+		this.width = width;
 	}
 
 	public double getHeight() {

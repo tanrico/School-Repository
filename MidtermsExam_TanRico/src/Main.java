@@ -28,6 +28,9 @@ public class Main {
 		people.add(p5);
 		
 		//Displaying persons
+		println("\n\nQ1.)Write a Java program to create a class called \"Person\" with a name, age, and address attribute. "
+				+ "\nCreate Five instances of the \"Person\" class, set their attributes using the constructor, "
+				+ "\nand print their name and age. ", true);
 		for(Person p : people) {
 			println("====="
 					+ "\nName: " + p.getName()
@@ -44,6 +47,9 @@ public class Main {
         dog2.setBreed("Siberian Husky");
         
         println("=====",true);
+        println("\nQ2.) Write a Java program to create a class called \"Dog\" with a name and breed attribute. "
+        		+ "\nCreate two instances of the \"Dog\" class, set their attributes using the constructor and "
+        		+ "\nmodify the attributes using the setter methods and print the updated values.", true);
         dog1.display();
         dog2.display();
 	}
@@ -53,11 +59,13 @@ public class Main {
 		Rectangle r = new Rectangle(10, 5);
 		
 		//Displaying the length, height, perimeter, and area
-		println("\n\nRectangle r:"
-				+ "\n Length: " + r.getLength()
+		println("\n\nQ3.) Write a Java program to create a class called \"Rectangle\" with width and height attributes. "
+				+ "\nCalculate the area and perimeter of the rectangle.", true);
+		println("\nRectangle r:"
+				+ "\n Length: " + r.getWidth()
 				+ "\n Height: " + r.getHeight() 
-				+ "\n Perimeter: " + r.perimeter(r.getLength(), r.getHeight())
-				+ "\n Area: " + r.area(r.getLength(), r.getHeight()), true);
+				+ "\n Perimeter: " + r.perimeter(r.getWidth(), r.getHeight())
+				+ "\n Area: " + r.area(r.getWidth(), r.getHeight()), true);
 	}
 	
 	public static void println(String x, boolean y) {
